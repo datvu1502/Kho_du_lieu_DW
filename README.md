@@ -58,16 +58,20 @@ của công ty.
 ![OLTP](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/7513f029-f84c-41cb-bd51-5f3a817098b0)
 
 # Khám phá dữ liệu
-Data analysis tools:
+## Data analysis tools:
+
 ![z5070571748364_9103b436388a5d321a8223eb485d6b5b](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/011864f7-e34a-4e87-a5cc-ccb773c85398)
 
-Biểu đồ histogram về tần suất số lượng sản phẩm trong 1 đơn đặt hàng:
+## Biểu đồ histogram về tần suất số lượng sản phẩm trong 1 đơn đặt hàng:
 ![histogram_order](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/3eb78755-c18f-45f0-bcd4-24ef2a486d33)
 
-Biểu đồ thể số lượng hàng tồn kho theo thời gian:
+## Biểu đồ cột thể số lượng hàng tồn kho trung bình tại các cơ sở:
+![mean_location](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/b5148be7-72b3-4817-9078-861f6539402c)
+
+## Biểu đồ thể số lượng hàng tồn kho theo thời gian:
 ![tonkhotime](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8ff0d084-9338-4af2-bcce-cdfbfcef5eb4)
 
-Biểu đồ boxplot thể hiện sự phân phối số lượng hàng tồn kho theo loại sản phẩm
+## Biểu đồ boxplot thể hiện sự phân phối số lượng hàng tồn kho theo loại sản phẩm
 ![boxplot](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/a74063c1-2fd7-4cba-a1b6-c6db11cc22b1)
 
 # Kiến trúc Datawarehouse
