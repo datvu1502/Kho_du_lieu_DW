@@ -27,6 +27,8 @@ vận chuyển, và xử lý hàng tồn kho.\\
 đủ hàng hóa để đáp ứng nhu cầu của khách hàng.\\
 • Tăng hiệu quả tài chính: Quản lý hàng tồn kho hiệu quả giúp tối ưu hóa vòng quay
 vốn.\\
+
+
 • Theo dõi và đánh giá hiệu suất: Quản lý hàng tồn kho cung cấp thông tin quan
 trọng để theo dõi và nhận biết xu hướng tiêu thụ, đánh giá hiệu quả của chiến lược
 quản lý hàng tồn kho và thực hiện các điều chỉnh cần thiết.
