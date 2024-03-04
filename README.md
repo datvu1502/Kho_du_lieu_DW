@@ -5,12 +5,12 @@ thông minh đã trở thành yếu tố quyết định sự thành công của
 chức trong mọi lĩnh vực. Kho dữ liệu, cùng với công nghệ phân tích dữ liệu và trí tuệ nhân
 tạo, đóng vai trò quan trọng trong việc tạo ra thông tin hữu ích và hiểu sâu về khách
 hàng, thị trường và quy trình kinh doanh.
+
 Báo cáo này sẽ giới thiệu một số khái niệm cơ bản về kho dữ liệu và kinh doanh
 thông minh, từ cách xây dựng một kho dữ liệu hiệu quả, quản lý dữ liệu, cho đến quá
 trình trích xuất thông tin, phân tích và áp dụng dữ liệu trong kinh doanh.
 
 # Tổng quan về Inventory
-Giới thiệu
 Quản lý hàng tồn kho hay quản lý kho hàng là tập hợp các công việc liên quan đến các
 công tác tổ chức, quản lý, sắp xếp, bảo quản hàng hóa trong kho lưu trữ. Quản lý hàng
 tồn kho đề cập đến quá trình đặt hàng, lưu trữ, sử dụng và bán hàng tồn kho của công ty.
@@ -72,6 +72,7 @@ Biểu đồ boxplot thể hiện sự phân phối số lượng hàng tồn kh
 
 # Kiến trúc Datawarehouse
 Kiến trúc mô hình hệ thống Datawarehouse gồm 4 lớp:
+<img width="844" alt="datawarehouse" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/c65fcccb-8a1a-49ec-baaa-6983ee7e1177">
 
 #  Tóm tắt các hoạt động ETL
 • Extrasct: 2 file bak AdventureWorks2022.bak và AdventureWorksDW2022.bak sau
