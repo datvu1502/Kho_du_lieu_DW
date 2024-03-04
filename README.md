@@ -70,4 +70,66 @@ Biểu đồ thể số lượng hàng tồn kho theo thời gian:
 Biểu đồ boxplot thể hiện sự phân phối số lượng hàng tồn kho theo loại sản phẩm
 ![boxplot](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/a74063c1-2fd7-4cba-a1b6-c6db11cc22b1)
 
+# Kiến trúc Datawarehouse
+Kiến trúc mô hình hệ thống Datawarehouse gồm 4 lớp:
+
+#  Tóm tắt các hoạt động ETL
+• Extrasct: 2 file bak AdventureWorks2022.bak và AdventureWorksDW2022.bak sau
+khi được download sẽ được mở và lưu trữ trên SQL Server. Sau đó, thực hiện việc
+trích xuất dữ liệu cần thiết từ SQL Server vào vùng stagging để xử lý.
+
+• Transform: Gồm các hoạt động được thực hiện trên các công cụ là Power Query,
+MySQL, Python như: làm sạch dữ liệu, xử lý dữ liệu null, xóa các trường không cần
+thiết, định dạng kiểu dữ liệu, chuẩn hóa dữ liệu, phân loại dữ liệu theo nhóm.
+
+• Load: Tải dữ liệu sau khi đã tiền xử lí vào hệ cơ sở dữ liệu datamart trong MySQL,
+quá trình load dữ liệu sẽ được sử dụng bằng Python thông qua mysql-connector.
+
+# Data Model OLAP
+## Model Logic
+<img width="834" alt="model_logic" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/b02fd36c-98a7-45a8-95af-b079cd8fde1b">
+
+Model Vật Lý
+![dimfact_erd](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/1bd4da5c-d836-4197-9776-547c5f182e97)
+
+Các Fact và Dimension bao gồm:
+• Fact-Sales: có chức năng thống kê các chỉ số quan trọng trong quá trình bán hàng.
+• Fact-Purchasing: có nhiệm vụ phân tích tình hình nhập hàng.
+• Fact-Work Order: phục vụ cho việc báo cáo về khâu sản xuất của công ty.
+• Fact-Inventory Balance: chứa thông tin các giao dịch xuất-nhập hàng ngày trong
+kho, giúp thực hiện các quyết định liên quan đến phân phối số lượng các sản phẩm
+một cách hợp lý.
+• Dim-Date: chứa thông tin về thời gian.
+• Dim-Product: chứa các thông tin về sản phẩm.
+• Dim-Ship Method: chứa các thông tin về các hình thức vận chuyển.
+• Dim-Vendor: chứa các thông tin về nhà cung cấp và mức độ tin cậy của nhà cung
+cấp đó.
+
+# Xây dựng Dashboard phân tích dữ liệu
+
+1. Trang Quản lý kho hàng gồm các slicer và các chart thể hiện các thông số tổng quát
+giúp người sử dụng dashboard có được những thông số theo mục đích phân tích. Các
+chart chính trong dash chủ yếu đưa ra các thông tin phân tích liên quan đến tổng
+lượng hàng trong kho, lượng hàng nhập, xuất theo thời gian. Số lượng sản phẩm
+trong kho theo loại sản phẩm, màu, hàng sản xuất và hàng bán.
+![dash1](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/042a8efe-9e9e-4ec5-86de-95c2e5ee62fd)
+
+2. Trang Phân tích đơn nhập hàng chủ yếu phân tích số lượng và giá trị hàng mua theo
+các nhà cung cấp, phương thức vận chuyển theo thời gian, thời gian nhập hàng của
+từng loại sản phẩm.
+![2dash](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/d153d9c6-72ec-4855-bc99-c4e7ef557749)
+
+3. Trang Phân tích sản xuất gồm các slicer, chart và chỉ số thể hiện tình hình tổng
+quan về sản lượng và giá trị sản xuất theo thời gian, có thể drilldown từ loại sản
+phẩm xuống tên sản phẩm để phân tích cụ thể.
+![3dash](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/16e3bad9-41c2-4634-bc2c-1f22a4ca81ea)
+
+4. Trang Phân tích bán hàng chủ yếu phân tích về tổng lượng bán và giá trị theo
+loại sản phẩm và theo thời gian. Dùng slicer để tùy ý, tùy chỉnh thông tin hiển thị
+dashboard mà người dùng cần.
+![4dash](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/df912479-aa86-4ee2-9d5b-4b9743160d48)
+
+
+
+
 
