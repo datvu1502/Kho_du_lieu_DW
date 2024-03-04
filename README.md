@@ -20,15 +20,22 @@ phải luôn thực hiện liên tục và xuyên suốt trong quá trình hàng
 Việc quản lý hàng tồn kho hiệu quả giúp tăng cường an toàn trong bảo quản hàng
 hóa, tận dụng tốt cơ sở vật chất, tiết kiệm chi phí đầu tư cũng như tăng doanh thu cho
 doanh nghiệp về lâu dài.
-# Vai trò của quản lý kho:
+# Vai trò của quản lý kho
 • Tối ưu hoá chi phí: Quản lý hàng tồn kho hiệu quả giúp giảm thiểu chi phí lưu trữ,
-vận chuyển, và xử lý hàng tồn kho.\\
+vận chuyển, và xử lý hàng tồn kho.
+
 • Đảm bảo sẵn sàng cung ứng: Quản lý hàng tồn kho đảm bảo rằng tổ chức luôn có
-đủ hàng hóa để đáp ứng nhu cầu của khách hàng.\\
+đủ hàng hóa để đáp ứng nhu cầu của khách hàng.
+
 • Tăng hiệu quả tài chính: Quản lý hàng tồn kho hiệu quả giúp tối ưu hóa vòng quay
-vốn.\\
+vốn.
 
 
 • Theo dõi và đánh giá hiệu suất: Quản lý hàng tồn kho cung cấp thông tin quan
 trọng để theo dõi và nhận biết xu hướng tiêu thụ, đánh giá hiệu quả của chiến lược
 quản lý hàng tồn kho và thực hiện các điều chỉnh cần thiết.
+
+# Quy trình nghiệp vụ
+![diagram](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/24fc5e6e-1bcc-4b31-a77f-70d364aacf4b)
+
+
