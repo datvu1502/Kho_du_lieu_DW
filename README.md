@@ -98,15 +98,23 @@ quá trình load dữ liệu sẽ được sử dụng bằng Python thông qua 
 ![dimfact_erd](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/1bd4da5c-d836-4197-9776-547c5f182e97)
 
 Các Fact và Dimension bao gồm:
+
 • Fact-Sales: có chức năng thống kê các chỉ số quan trọng trong quá trình bán hàng.
+
 • Fact-Purchasing: có nhiệm vụ phân tích tình hình nhập hàng.
+
 • Fact-Work Order: phục vụ cho việc báo cáo về khâu sản xuất của công ty.
+
 • Fact-Inventory Balance: chứa thông tin các giao dịch xuất-nhập hàng ngày trong
 kho, giúp thực hiện các quyết định liên quan đến phân phối số lượng các sản phẩm
 một cách hợp lý.
+
 • Dim-Date: chứa thông tin về thời gian.
+
 • Dim-Product: chứa các thông tin về sản phẩm.
+
 • Dim-Ship Method: chứa các thông tin về các hình thức vận chuyển.
+
 • Dim-Vendor: chứa các thông tin về nhà cung cấp và mức độ tin cậy của nhà cung
 cấp đó.
 
