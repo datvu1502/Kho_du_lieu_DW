@@ -212,7 +212,6 @@ Chiều khái niệm về đơn vị vận chuyển
 <img width="95" alt="voi_ship" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/0ffd2611-57a6-4351-8fe0-3793df31b7cb">
 
 Chiều khái niệm về nhà cung cấp
-
 <img width="239" alt="voi_vendor" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/0863ec1c-ef9a-467d-9687-783163909d1b">
 
 
