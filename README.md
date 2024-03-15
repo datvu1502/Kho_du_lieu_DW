@@ -63,23 +63,27 @@ của công ty.
 ![z5070571748364_9103b436388a5d321a8223eb485d6b5b](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/011864f7-e34a-4e87-a5cc-ccb773c85398)
 ## Biểu đồ scatter thể hiện tương quan giữa ScrappedQty và StockedQty:
 ![scatter](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/295aebb8-15e2-4a2d-b8e3-0afc723a75c5)
+
 Từ biểu đồ phân tán ta có thể nhận thấy rằng có sự tương quan giữa số lượng đơn
 sản phẩm được sản xuất và số lượng sản phẩm bị lỗi (trong các trường hợp xuất hiện sản phẩm lỗi). Điều này cũng rất phù hợp với thực tế khi chúng tả sản xuất
  nhiều thì trường hợp xuất hiện sản phẩm lỗi càng cao
 ## Biểu đồ histogram về tần suất số lượng sản phẩm trong 1 đơn đặt hàng:
 ![histogram_order](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/3eb78755-c18f-45f0-bcd4-24ef2a486d33)
+
 Từ biểu đồ ta có thể thấy ràng tần suất số lượng sản phẩm được đặt trong 1 đơn
 hàng có hình dáng nửa của hình chung có đỉnh nằm trong khoảng 0-10. Từ đó có
 thể đánh giá rằng nó đang tuân theo phân phối chuẩn.
 
 ## Biểu đồ histogram về tần suất số lượng hàng tồn kho:
 ![histogram_quantity](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/423896c0-e2c6-4113-8195-6f5545825763)
+
 Từ biểu đồ ta có thể thấy tần suất số lượng hàng tồn kho có dạng biểu đồ nhiều
 đỉnh. Nó là biểu hiện của sự đa dạng và phức tạp trong dữ liệu. Và nó không tuân
 theo một luật phân phối nào.
 
 ## Biểu đồ cột thể số lượng hàng tồn kho trung bình tại các cơ sở:
 ![mean_location](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/b5148be7-72b3-4817-9078-861f6539402c)
+
 Từ biểu đồ trên ta có thể thấy rằng số lượng hàng tồn kho giữa các cơ sở phân bố
 không đều, và có sự chênh lệch khá lớn giữa cơ sở cao nhất và thấp nhất. Cơ sở có
 số lượng hàng tồn kho trung bình là Sheet Metal Racks và cơ sở có lượng hàng tồn
@@ -87,6 +91,7 @@ kho thấp nhất là Paint Storage.
 
 ## Biểu đồ thể số lượng hàng tồn kho theo thời gian:
 ![tonkhotime](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8ff0d084-9338-4af2-bcce-cdfbfcef5eb4)
+
 Biểu đồ trên thể hiện số lượng hàng tồn kho của các loại sản phẩm theo thời gian.
 
 – Đối với loại sản phẩm Accessories và Clothing: số lượng hàng tồn kho có sự
@@ -103,6 +108,7 @@ Có xu hướng tăng mạnh từ tháng 5/2011 đến tháng 5/2012. Và có xu
 giảm mạnh từ tháng 5/2012 đến tháng 9/2014.
 ## Biểu đồ boxplot thể hiện sự phân phối số lượng hàng tồn kho theo loại sản phẩm
 ![boxplot](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/a74063c1-2fd7-4cba-a1b6-c6db11cc22b1)
+
 Độ cao giữa các hộp có sự chênh lệch thể hiện sự phân bố không đồng đều giữa các
 loại sản phẩm tồn kho. Có xuất hiện một vài giá trị ngoại lai trong loại sản phẩm
 Accessories.
@@ -116,6 +122,7 @@ Có xu hướng tăng mạnh từ tháng 5/2011 đến tháng 5/2012. Và có xu
 giảm mạnh từ tháng 5/2012 đến tháng 9/2014.
 # Kiến trúc Datawarehouse
 Kiến trúc mô hình hệ thống Datawarehouse gồm 4 lớp:
+
 <img width="844" alt="datawarehouse" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/c65fcccb-8a1a-49ec-baaa-6983ee7e1177">
 
 #  Tóm tắt các hoạt động ETL
@@ -130,7 +137,85 @@ thiết, định dạng kiểu dữ liệu, chuẩn hóa dữ liệu, phân lo�
 • Load: Tải dữ liệu sau khi đã tiền xử lí vào hệ cơ sở dữ liệu datamart trong MySQL,
 quá trình load dữ liệu sẽ được sử dụng bằng Python thông qua mysql-connector.
 
+## Sử dụng công cụ PowerQuery
+
+• Dim Product: Chuẩn hóa lại cột ID trong bảng Product, sau đó nối bảng product
+với bảng ProductCategory và ProductSubCategory để lấy các trường dữ liệu cần
+thiết, tiếp đến sẽ loại bỏ các trường dữ liệu không cần thiết như ID của bảng
+ProductCategory, ProductSubCategory,...Cuối cùng, thay thế các giá trị NULL bằng
+dữ liệu có nghĩa cho việc phân tích.
+
+![etl_product](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/d97b3973-e76f-4b5b-a369-f0759ba5f907)
+
+• Dim Vendor: Loại bỏ các trường không quan trọng trong bảng Vendor, giữ lại 3
+trường VendorID, Name, CreditRating.
+
+![etl_vendor](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8bec5f63-3836-4a23-bff3-b99dbe06e2ae)
+
+• Dim Ship Method: Loại bỏ các trường không quan trọng trong bảng ShipMethod,
+giữ lại 3 trường ShipMethodID, Name.
+
+![etl_shipmethod](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/4d7b7d31-60d7-4c1b-93f6-c1465e14c8cf)
+
+• Fact Purchasing: Nối bảng PurchaseOrderHeader với bảng PurchaseOrderDetail và
+bảng DimProduct đã được xử lý. Sau đó, bỏ đi một số trường dữ liệu không cần
+thiết.
+
+![etl_purchase (1)](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/93dd23f8-e729-49f2-86bb-1f79bdf6eaa9)
+
+• Fact Sales: Thực hiện lọc dữ liệu trên bảng TransactionHistory với TransactionType
+là S. Sau đó, bỏ đi một số trường dữ liệu không cần thiết.
+
+![etl_sales](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/63e75284-5ceb-4b02-bec5-e9ee5e1e2215)
+
+• Fact Work Order: Thực hiện lọc dữ liệu trên bảng TransactionHistory với Transac-
+tionType là S. Sau đó, bỏ đi một số trường dữ liệu không cần thiết.
+
+![etl_workorder](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/35f2ff47-959c-4d48-ba8a-68070afd0901)
+
+##  Sử dụng công cụ Python
+• Sinh trường dữ liệu thời gian bắt đầu theo đúng định dạng chuẩn của MySQL
+
+<img width="553" alt="time1" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/77915e29-a812-4b97-a0ef-5555d99b963d">
+
+• Sau đó đổ vào cơ sở dữ liệu MySQL.
+
+<img width="552" alt="time2" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8e0e9f89-f4e0-4d3e-909c-f1680398afa3">
+
+## Sử dụng công cụ MySQL
+• Do dữ liệu thời gian tại vùng staging chưa phải dạng chuẩn của MySQL, nên khi xây
+dựng các bảng trong MySQl đều để các trường thời gian dưới dạng VARCHAR(20).
+Sau khi dữ liệu, cần đưa về dạng chuẩn, điều này được thực hiện trên MySQL
+Workbench bằng công cụ Table.
+
+![time_sql](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8a949a72-7340-4772-b6b9-ec8d69df8f29)
+
+# Chuyển đổi từ OLTP sang OLAP
+Trích xuất các trường dữ liệu trong oltp để tạo dim, fact
+
+![otlpolap1](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/352e5b1d-67c8-4f2f-bf15-b90e994c700c)
+
+![oltpolap2](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/fdee84f6-b7b1-490d-83f9-c21c1703de40)
+
 # Data Model OLAP
+## Hệ thống chiều khái niệm
+Chiều khái niệm về thời gian
+
+<img width="221" alt="voi_date" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/dd97decb-2a4f-4fbb-82fd-c94111c6bc11">
+
+Chiều khái niệm về sản phẩm
+
+<img width="590" alt="voi_product" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/463462e7-877e-4216-8ca9-f4305f595f8d">
+
+Chiều khái niệm về đơn vị vận chuyển
+
+<img width="95" alt="voi_ship" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/0ffd2611-57a6-4351-8fe0-3793df31b7cb">
+
+Chiều khái niệm về nhà cung cấp
+
+<img width="239" alt="voi_vendor" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/0863ec1c-ef9a-467d-9687-783163909d1b">
+
+
 ## Model Logic
 <img width="834" alt="model_logic" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/b02fd36c-98a7-45a8-95af-b079cd8fde1b">
 
