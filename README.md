@@ -61,19 +61,59 @@ của công ty.
 ## Data analysis tools:
 
 ![z5070571748364_9103b436388a5d321a8223eb485d6b5b](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/011864f7-e34a-4e87-a5cc-ccb773c85398)
-
+## Biểu đồ scatter thể hiện tương quan giữa ScrappedQty và StockedQty:
+![scatter](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/295aebb8-15e2-4a2d-b8e3-0afc723a75c5)
+Từ biểu đồ phân tán ta có thể nhận thấy rằng có sự tương quan giữa số lượng đơn
+sản phẩm được sản xuất và số lượng sản phẩm bị lỗi (trong các trường hợp xuất hiện sản phẩm lỗi). Điều này cũng rất phù hợp với thực tế khi chúng tả sản xuất
+ nhiều thì trường hợp xuất hiện sản phẩm lỗi càng cao
 ## Biểu đồ histogram về tần suất số lượng sản phẩm trong 1 đơn đặt hàng:
 ![histogram_order](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/3eb78755-c18f-45f0-bcd4-24ef2a486d33)
+Từ biểu đồ ta có thể thấy ràng tần suất số lượng sản phẩm được đặt trong 1 đơn
+hàng có hình dáng nửa của hình chung có đỉnh nằm trong khoảng 0-10. Từ đó có
+thể đánh giá rằng nó đang tuân theo phân phối chuẩn.
+
+## Biểu đồ histogram về tần suất số lượng hàng tồn kho:
+![histogram_quantity](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/423896c0-e2c6-4113-8195-6f5545825763)
+Từ biểu đồ ta có thể thấy tần suất số lượng hàng tồn kho có dạng biểu đồ nhiều
+đỉnh. Nó là biểu hiện của sự đa dạng và phức tạp trong dữ liệu. Và nó không tuân
+theo một luật phân phối nào.
 
 ## Biểu đồ cột thể số lượng hàng tồn kho trung bình tại các cơ sở:
 ![mean_location](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/b5148be7-72b3-4817-9078-861f6539402c)
+Từ biểu đồ trên ta có thể thấy rằng số lượng hàng tồn kho giữa các cơ sở phân bố
+không đều, và có sự chênh lệch khá lớn giữa cơ sở cao nhất và thấp nhất. Cơ sở có
+số lượng hàng tồn kho trung bình là Sheet Metal Racks và cơ sở có lượng hàng tồn
+kho thấp nhất là Paint Storage.
 
 ## Biểu đồ thể số lượng hàng tồn kho theo thời gian:
 ![tonkhotime](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8ff0d084-9338-4af2-bcce-cdfbfcef5eb4)
+Biểu đồ trên thể hiện số lượng hàng tồn kho của các loại sản phẩm theo thời gian.
 
+– Đối với loại sản phẩm Accessories và Clothing: số lượng hàng tồn kho có sự
+biến động không cao. Có xu hướng tăng từ tháng 5/2011 đến tháng 1/2012.
+Giữ mức ổn định từ tháng 1/2012 cho đến tháng 5/2013. Và có xu hướng giảm
+từ tháng 5/2013 đến tháng 9/2014.
+
+– Đối với loại sản phẩm Bikes: số lượng hàng tồn kho có sự biến động lớn. Có xu
+hướng giảm từ tháng 5/2011 đến tháng 5/2012. Có xu hướng tăng từ tháng
+5/2012 đến tháng 5/2013. Có xu hướng giảm từ tháng 5/2013 đến tháng 9/2014.
+
+– Đối với loại sản phẩm Components: số lượng hàng tồn kho có sự biến động lớn.
+Có xu hướng tăng mạnh từ tháng 5/2011 đến tháng 5/2012. Và có xu hướng
+giảm mạnh từ tháng 5/2012 đến tháng 9/2014.
 ## Biểu đồ boxplot thể hiện sự phân phối số lượng hàng tồn kho theo loại sản phẩm
 ![boxplot](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/a74063c1-2fd7-4cba-a1b6-c6db11cc22b1)
+Độ cao giữa các hộp có sự chênh lệch thể hiện sự phân bố không đồng đều giữa các
+loại sản phẩm tồn kho. Có xuất hiện một vài giá trị ngoại lai trong loại sản phẩm
+Accessories.
 
+– Đối với loại sản phẩm Bikes: số lượng hàng tồn kho có sự biến động lớn. Có xu
+hướng giảm từ tháng 5/2011 đến tháng 5/2012. Có xu hướng tăng từ tháng
+5/2012 đến tháng 5/2013. Có xu hướng giảm từ tháng 5/2013 đến tháng 9/2014.
+
+– Đối với loại sản phẩm Components: số lượng hàng tồn kho có sự biến động lớn.
+Có xu hướng tăng mạnh từ tháng 5/2011 đến tháng 5/2012. Và có xu hướng
+giảm mạnh từ tháng 5/2012 đến tháng 9/2014.
 # Kiến trúc Datawarehouse
 Kiến trúc mô hình hệ thống Datawarehouse gồm 4 lớp:
 <img width="844" alt="datawarehouse" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/c65fcccb-8a1a-49ec-baaa-6983ee7e1177">
