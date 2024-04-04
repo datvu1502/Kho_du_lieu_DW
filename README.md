@@ -173,22 +173,6 @@ tionType là S. Sau đó, bỏ đi một số trường dữ liệu không cần
 
 ![etl_workorder](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/35f2ff47-959c-4d48-ba8a-68070afd0901)
 
-##  Sử dụng công cụ Python
-• Sinh trường dữ liệu thời gian bắt đầu theo đúng định dạng chuẩn của MySQL
-
-<img width="553" alt="time1" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/77915e29-a812-4b97-a0ef-5555d99b963d">
-
-• Sau đó đổ vào cơ sở dữ liệu MySQL.
-
-<img width="552" alt="time2" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8e0e9f89-f4e0-4d3e-909c-f1680398afa3">
-
-## Sử dụng công cụ MySQL
-• Do dữ liệu thời gian tại vùng staging chưa phải dạng chuẩn của MySQL, nên khi xây
-dựng các bảng trong MySQl đều để các trường thời gian dưới dạng VARCHAR(20).
-Sau khi dữ liệu, cần đưa về dạng chuẩn, điều này được thực hiện trên MySQL
-Workbench bằng công cụ Table.
-
-![time_sql](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/8a949a72-7340-4772-b6b9-ec8d69df8f29)
 
 # Chuyển đổi từ OLTP sang OLAP
 Trích xuất các trường dữ liệu trong oltp để tạo dim, fact
