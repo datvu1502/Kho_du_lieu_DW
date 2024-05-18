@@ -123,7 +123,8 @@ giảm mạnh từ tháng 5/2012 đến tháng 9/2014.
 # Kiến trúc Datawarehouse
 Kiến trúc mô hình hệ thống Datawarehouse gồm 4 lớp:
 
-<img width="844" alt="datawarehouse" src="https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/c65fcccb-8a1a-49ec-baaa-6983ee7e1177">
+![2024-05-18T11_11_24](https://github.com/datvu1502/Kho_du_lieu_DW/assets/118582440/017ba4ce-182c-481d-9caa-e0e78ac20871)
+
 
 #  Tóm tắt các hoạt động ETL
 • Extrasct: 2 file bak AdventureWorks2022.bak và AdventureWorksDW2022.bak sau
