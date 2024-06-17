@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "Rank": "1",
+            "App name": "Infinite Options",
+            "App link": "https://apps.shopify.com/custom-options",
+            "Avg rating": "4.8",
+            "Count review": "3,926",
+            "Sub description": "Product options to personalize products into infinite variants",
+            "Pricing": "Free trial available",
+            "Built for Shopify": "yes"
+        },
+        {
+            "Rank": "2",
+            "App name": "langify \u2011 translate your store",
+            "App link": "https://apps.shopify.com/langify",
+            "Avg rating": "4.8",
+            "Count review": "1,472",
+            "Sub description": "Translate your shop into multiple languages",
+            "Pricing": "Free trial available",
+            "Built for Shopify": "no"
+        },
+        {
+            "Rank": "3",
+            "App name": "Attentive: SMS + MMS Marketing",
+            "App link": "https://apps.shopify.com/attentive",
+            "Avg rating": "3.9",
+            "Count review": "36",
+            "Sub description": "SMS marketing built to help e-commerce brands increase revenue",
+            "Pricing": "Free to install",
+            "Built for Shopify": "no"
+        },
+        {
+            "Rank": "4",
+            "App name": "Eruption:Leads and Retargeting",
+            "App link": "https://apps.shopify.com/eruption",
+            "Avg rating": "5.0",
+            "Count review": "1",
+            "Sub description": "Boost Sales and Meta Ads with leads Facebook and retargeting.",
+            "Pricing": "Free trial available",
+            "Built for Shopify": "no"
+        },
+        {
+            "Rank": "5",
+            "App name": "Monk Free Gift & Cart Upsell",
+            "App link": "https://apps.shopify.com/monk-cart-upsell-cross-sell",
+            "Avg rating": "4.9",
+            "Count review": "420",
+            "Sub description": "Cross sell & gift with purchase across the entire user journey",
+            "Pricing": "Free plan available",
+            "Built for Shopify": "yes"
+        },
+        {
+            "Rank": "6",
+            "App name": "MetaTrack \u2011 PayPal Track Sync",
+            "App link": "https://apps.shopify.com/metatrack",
+            "Avg rating": "3.7",
+            "Count review": "16",
+            "Sub description": "MetaTrack auto sync trackings to PayPal",
+            "Pricing": "Free to install",
+            "Built for Shopify": "no"
+        },
+        {
+            "Rank": "7",
+            "App name": "PreOrder Globo | Back in Stock",
+            "App link": "https://apps.shopify.com/pre-order-pro",
+            "Avg rating": "4.8",
+            "Count review": "949",
+            "Sub description": "Boost your sales with Pre-order Now, Notify Me, Restock Alert",
+            "Pricing": "Free",
+            "Built for Shopify": "yes"
+        },
+        {
+            "Rank": "8",
+            "App name": "Address Validator Plus",
+            "App link": "https://apps.shopify.com/address-validator",
+            "Avg rating": "4.6",
+            "Count review": "215",
+            "Sub description": "Address validation to prevent shipping and delivery failures",
+            "Pricing": "Free to install",
+            "Built for Shopify": "no"
+        }
+    ],
+    "scraped_at": "2024-06-10T06:34:40+00:00"
+}
